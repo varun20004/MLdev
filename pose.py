@@ -13,7 +13,7 @@ cTime= 0
 pTime=0
 while cv2.waitKey(1) !=27:
     _ , img =source.read()
-    imgRGB= cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+    imgRGB = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
     results = pose.process(imgRGB)
   
     if results.pose_landmarks:
